@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductsHistory{
+    private final List<Product> products = new ArrayList<>();
+
+    public void addProduct(Product product) {
+        products.add(product);
+    }
+    public long SumProduct() {
+        long sum = 0;
+        for (Product product : products) sum = sum + product.getKalories();
+        return sum;
+        }
+    @Override
+    public String toString() {
+        return "ProductsHistory{" +
+                "products="+ products+
+                '}';
+    }
+}
