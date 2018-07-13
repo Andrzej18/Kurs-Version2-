@@ -1,0 +1,27 @@
+
+public class Product extends ProductsHistory{
+    private final String nameproduct;
+    private final long kalories;
+
+    public Product(String nameproduct, long kalories) {
+        this.nameproduct = nameproduct;
+        this.kalories = kalories;
+    }
+
+    public String getNameproduct() {
+        return nameproduct;
+    }
+
+    public long getKalories() {
+        return kalories;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{"+
+                "nameproduct=" + nameproduct +
+                "kalories=" + kalories +
+                "}";
+    }
+
+}
